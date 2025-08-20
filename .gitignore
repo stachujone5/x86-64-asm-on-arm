@@ -1,0 +1,5 @@
+.claude
+
+# Assembly build outputs
+*.o
+index

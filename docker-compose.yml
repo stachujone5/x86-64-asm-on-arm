@@ -1,0 +1,11 @@
+services:
+  asm:
+    image: debian:stable-slim
+    platform: linux/amd64
+    container_name: asm-lab
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: bash -c "apt-get update && apt-get install -y nasm binutils && tail -f /dev/null"
